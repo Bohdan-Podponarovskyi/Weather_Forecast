@@ -62,7 +62,6 @@ i {
     height: 100%;
     min-height: 100%;
     border: 2px solid #FFFFFF;
-    opacity: 0.5;
 }
 
 .forecast__list-item {
@@ -76,24 +75,10 @@ i {
     padding: 25px 0;
 }
 
-.forecast__cities-list:not(:hover) {
-    opacity: 1;
+.forecast__cities-list:hover > .forecast__list-item:not(:hover) {
+    opacity: 0.3;
     transition: all .1s ease-in;
 }
-
-/*.forecast__list-item:hover {*/
-/*    opacity: 1;*/
-/*    transition: all .1s ease-in;*/
-/*}*/
-
-/*.forecast__list-item:not(:hover) {*/
-/*    opacity: 0.5;*/
-/*    transition: all .1s ease-in;*/
-/*}*/
-
-/*body:hover ~ main.forecast > ul.forecast__cities-list {*/
-/*    opacity: 1;*/
-/*}*/
 
 .forecast__list-item_one-box {
     width: 25%;
